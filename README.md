@@ -1,1 +1,6 @@
-# react-api
+IGNITE Project
+
+React
+Redux
+Framer-motion
+styled-components
