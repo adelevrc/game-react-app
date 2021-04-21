@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import {motion} from 'framer-motion'; 
 import {Link} from 'react-router-dom'; 
 import {smallImage} from '../utils'; 
+import {popUp} from '../animations'; 
 
 const Game = ({ name, image, released, id }) => {
 
@@ -16,7 +17,7 @@ const Game = ({ name, image, released, id }) => {
         dispatch(loadDetail(id))
     }
     return(
-        <StyledGame layoutId={strinPathId} onClick={loadDetailHandler}>
+        <StyledGame variants={popUp} initial='hidden' animate='show' layoutId={strinPathId} onClick={loadDetailHandler}>
             <Link to={`game/${id}`}>
                 <motion.h3 layoutId={`title ${strinPathId}`}> {name} </motion.h3>
                 <p> {released} </p>
