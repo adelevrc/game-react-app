@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion'; 
 
 const GameDetail = () => {
-    const {screen, game} = useSelector((state => state.detail)); 
+    const {screen, game, isLoading} = useSelector((state => state.detail)); 
     return(
-        <div>
+        <>
+        {!isLoading && (
             <CardShadow>
                 <Detail>
                     <Stats>
@@ -37,7 +38,9 @@ const GameDetail = () => {
                     </div>
                 </Detail>
             </CardShadow>
-        </div>
+        )}
+        
+        </>
     )
 }; 
 
