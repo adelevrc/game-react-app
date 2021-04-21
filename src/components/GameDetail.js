@@ -1,14 +1,27 @@
 import React from 'react'; 
 import {useSelector} from 'react-redux'; 
+import {useHistory} from 'react-router-dom'; 
 import styled from 'styled-components'; 
 import { motion } from 'framer-motion'; 
 
 const GameDetail = () => {
+
+    const history = useHistory(); 
+
+    const exitDetailHandler = (e) => {
+        
+        const element = e.target; 
+        console.log(element);
+        if(element.classList.contains('shadow')){
+            document.body.style.overflow = 'auto'; 
+            history.push('/'); 
+        }
+    }
     const {screen, game, isLoading} = useSelector((state => state.detail)); 
     return(
         <>
         {!isLoading && (
-            <CardShadow>
+            <CardShadow className="shadow" onClick={exitDetailHandler}>
                 <Detail>
                     <Stats>
                         <div className="rating">
