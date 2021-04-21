@@ -12,8 +12,6 @@ import {useLocation} from 'react-router-dom';
 const Home = () => {
   const location = useLocation(); 
   const pathId = location.pathname.split("/")[2]; 
-  
-
 
   const dispatch = useDispatch();
 
