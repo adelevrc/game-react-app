@@ -1,4 +1,4 @@
-# Fake Movie DB App
+# Fake Games App
 
 ## Framework : 
 - `React`
