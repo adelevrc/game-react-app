@@ -1,9 +1,12 @@
-# IGNITE Project
+# Fake Movie DB App
 
-### `React`
-### `Redux`
-### `Framer-motion`
-### `styled-components`
+## Framework : 
+- `React`
+
+## Dependencies : 
+- `Redux`
+- `Framer-motion`
+- `styled-components`
 
 
 In the project directory, you can run:
