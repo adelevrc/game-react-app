@@ -1,4 +1,5 @@
 # Fake Games App
+ You can see here the last games release with images, rating, and details ! 
 
 ## Framework : 
 - `React`
